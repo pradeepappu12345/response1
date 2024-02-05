@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>pradeep</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <script src="https://cdn.jsdelivr.net/npm/purecounter.js"></script>
+
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  
+    <!-- Include FontAwesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+  
+  
+
+  <!-- =======================================================
+  * Template Name: Green
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+<style>
+ 
+
+  /* Custom styles for the navbar */
+  #rty {
+      padding: 2.5%;
+      background-color: #ffffff;
+      transition: background-color 0.5s ease;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+  }
+
+  .navbar {
+      transition: all 0.5s ease;
+  }
+
+  /* Custom styles for the close button */
+  .btn-close {
+      display: none;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      z-index: 1050;
+  }
+
+  
+  #kite {
+      padding-top: 15ex;
+  }
+
+  #epl {
+      width: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+  }
+
+  #canara {
+      padding: 30px;
+      padding-left: 50px;
+      padding-top: 50px;
+  }
+
+  #waveButton {
+      background-color: #00b309;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+  }
+
+  #waveButton:hover {
+      background-color: #108015;
+      box-shadow: 0 0 50px #00ff95;
+  }
+
+  #waveButton::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      transform: scale(0);
+      transition: width 0.3s, height 0.3s, transform 0.3s, opacity 0.3s;
+      pointer-events: none;
+      transform-origin: center;
+      left: var(--x);
+      top: var(--y);
+  }
+
+  #waveButton:hover::after {
+      transform: scale(3);
+      opacity: 0;
+  }
+  .rounded-image {
+  border-radius: 15px; /* Adjust the radius as needed for smoother corners */
+  border: 2px solid rgb(118, 179, 189); /* Border color and width */
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+  .kite {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 50px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media only screen and (max-width: 600px) {
+      .for {
+          size: 2%;
+      }
+  }
+
+  .paragraph-container {
+      max-width: 1300px;
+      text-align: justify;
+    }
+
+    .paragraph-container p {
+      margin-bottom: 15px;
+    }
+
+
+    .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links ul li i {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+
+
+
+
+
+.services {
+      padding: 80px 0;
+    }
+
+    .services .icon-box {
+      background: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    .services .icon-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .services .icon-box .icon {
+      margin: 0 auto 20px auto;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .services .icon-box:hover .icon {
+      background: #6c757d;
+    }
+
+    .services .icon-box .icon svg {
+      width: 40px;
+      height: 40px;
+      fill: #6c757d;
+    }
+
+    .services .icon-box:hover .icon svg {
+      fill: #fff;
+    }
+
+    .services .icon-box h4 {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 10px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .services .icon-box:hover h4 {
+      color: #6c757d;
+    }
+
+    .services .icon-box p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@www.eurogreenqatar.com</a>
+        <!-- <i class="bi bi-phone-fill phone-icon"></i> +974 5590 5757 -->
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <img src="2.png" alt="" style="width: 300px;">
+
+      <!-- <h1 class="logo me-auto"><a href="index.html">Green</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar ml-5 ">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Elevator</a></li>
+              <li class="dropdown"><a href="#"><span>Electrical</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <!-- <li><a href="#">Elevator</a></li> -->
+                  <li><a href="#">CONTROL PANELS</a></li>
+                  <li><a href="#">FIRE ALARAM</a></li>
+                  <li><a href="#">MCC PANELS</a></li>
+                  <li><a href="#">DDC PANELS</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Mechanical</a></li>
+              <li><a href="#">Trading</a></li>
+              <!-- <li><a href="#">Drop Do</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">THE <span>INTRODUCTION</span></h2>
+              <div class="paragraph-container animate__animated animate__fadeInUp">
+                <p>Eurogreen Trading Contracting & Facilities Services W.L.L is an ISO 9001:2015 Certified Company. Eurogreen Group successfully secured a position as an all-around Electrical, Mechanical & Civil Contractor aiming at Qatar as a prime target in the field of Electrical, BMS, Telephone, Structured cabling system, Earthing, Lightning Protection, CCTV, Instrumentation, Mechanical, Piping, Plumbing, Fire Alarm, Firefighting, Building Maintenance work, Civil Works, Industrial works, Storage Solutions & Supply of Building materials, fire alarm, fire fighting, MEP items, etc.</p>
+              </div>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">THE <span>INTRODUCTION</span></h2>
+              <div class="paragraph-container animate__animated animate__fadeInUp">
+                <p>Eurogreen Trading Contracting & Facilities Services W.L.L is an ISO 9001:2015 Certified Company. Eurogreen Group successfully secured a position as an all-around Electrical, Mechanical & Civil Contractor aiming at Qatar as a prime target in the field of Electrical, BMS, Telephone, Structured cabling system, Earthing, Lightning Protection, CCTV, Instrumentation, Mechanical, Piping, Plumbing, Fire Alarm, Firefighting, Building Maintenance work, Civil Works, Industrial works, Storage Solutions & Supply of Building materials, fire alarm, fire fighting, MEP items, etc.</p>
+              </div>
+              
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">THE <span>INTRODUCTION</span></h2>
+              <div class="paragraph-container animate__animated animate__fadeInUp">
+                <p>Eurogreen Trading Contracting & Facilities Services W.L.L is an ISO 9001:2015 Certified Company. Eurogreen Group successfully secured a position as an all-around Electrical, Mechanical & Civil Contractor aiming at Qatar as a prime target in the field of Electrical, BMS, Telephone, Structured cabling system, Earthing, Lightning Protection, CCTV, Instrumentation, Mechanical, Piping, Plumbing, Fire Alarm, Firefighting, Building Maintenance work, Civil Works, Industrial works, Storage Solutions & Supply of Building materials, fire alarm, fire fighting, MEP items, etc.</p>
+              </div>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+  <div class="row" id="kite">
+    <div class="col-sm-5" id="canara">
+        <div class="container">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 600; font-size: 40px;">Crafting the Future, One Brick at a Time</h1>
+            <p>Transforming visions into reality with superior construction quality and dedicated service.</p>
+            <br><button id="waveButton">Connect with Us <i class="fa-solid fa-angle-right" style="margin-left: 10px;"></i></button>
+        </div>
+    </div>
+    <div class="col-sm-7">
+        <div class="container">
+            <img src="1.jpg" alt="" id="epl" class="for img-fluid">
+        </div>
+    </div>
+</div><br><br>
+
+
+
+    <!-- ======= Why Us Section ======= -->
+    <!-- <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>01</span>
+            <h4>Lorem Ipsum</h4>
+            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>02</span>
+            <h4>Repellat Nihil</h4>
+            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>03</span>
+            <h4> Ad ad velit qui</h4>
+            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>04</span>
+            <h4>Repellendus molestiae</h4>
+            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>05</span>
+            <h4>Sapiente Magnam</h4>
+            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>06</span>
+            <h4>Facilis Impedit</h4>
+            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>< End Why Us Section -->
+<!--
+    <!======= Our Clients Section ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Clients</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>End Our Clients Section  -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>EuroGreen</h2>
+        <p>In The Field</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch  mt-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">Building Maintenance</a></h4>
+          </div>
+        </div>
+
+        
+       
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">Cabling system & Maintenance</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">ELV Works & Lightning Protection</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-3"  data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">Elevator & Esculator Works</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">Fire Alarm & Fire Fighting</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch  mt-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">BMS Works & Plumbing</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch  mt-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">CCTV Work & Maintenance</a></h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch  mt-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="400" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+              </svg>
+              <i class="bx bxl-dribbble"></i>
+            </div>
+            <h4><a href="">MEP  & Ventilation Works</a></h4>
+          </div>
+        </div>
+
+        <!-- Add more col-lg-3 elements with proper content for other services -->
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="row justify-content-end">
+  <div class="col-lg-11">
+    <div class="row justify-content-end">
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Projects</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-clock"></i>
+          <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Years of experience</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <i class="bi bi-award"></i>
+          <span data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Awards</p>
+        </div>
+      </div> -->
+
+
+
+
+
+
+    <!-- ======= About Boxes Section ======= -->
+    <section id="about-boxes" class="about-boxes">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="img/image9.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-brush-4-line"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title"><a href="">Our Mission</a></h3>
+                <div class="card-text">
+                  <p>To be the premier MEP Contractor, a provider of the highest quality Engineering Services, and to implement solutions for achieving full customer satisfaction delivered through the safe technical competence and professional integrity of all our employees.</p>
+                
+                  <p>Words such as integrity, loyalty, and customer delight—while routinely thrown about without meaning in business today, have always been taken very seriously by the firm.</p>
+                
+                  <p>The mission of Eurogreen Trading Contracting & Facilities Services W.L.L is to build on our reputation for integrity, excellence, experience, and leadership as the nation’s finest construction organization by:</p>
+                
+                  <ol>
+                    <li>
+                      <!-- <i class="fas fa-check"></i> -->
+                      <p>To deliver fair Value and Quality to specification across our MEP installations in a timely manner.</p>
+                    </li>
+                
+                    <li>
+                      <!-- <i class="fas fa-check"></i> -->
+                      <p>To deliver our MEP objective with Zero Defects and Zero Injuries continuously improving the quality of our work and services.</p>
+                    </li>
+                
+                    <li>
+                      <!-- <i class="fas fa-check"></i> -->
+                      <p>Constantly striving to achieve the client’s expectations.</p>
+                    </li>
+                
+                    <li>
+                      <!-- <i class="fas fa-check"></i> -->
+                      <p>Maintaining our dedication & momentum to the highest moral principles.</p>
+                    </li>
+                
+                    <li>
+                      <!-- <i class="fas fa-check"></i> -->
+                      <p>Providing our people with a challenging, secure and safe environment in which to achieve personal career goals</p>
+                    </li>
+                  </ol>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img src="img/about-boxes-2.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-calendar-check-line"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Our Plan</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="img/image2.jpg" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-movie-2-line"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title"><a href="">Our Vision</a></h3>
+                <p class="card-text">“Build a partnership with our customers is
+                  paramount in creating long term relationships”
+                  this has always been the vision and the goal of
+                  Eurogreen Trading Contracting & Facilities
+                  Services W.L.L Our philosophy has proven that
+                  working together with clients as partners, truly
+                  does create more than just a business
+                  opportunity it creates a long-term relationship.</p>
+
+
+
+                  <p class="card-text"> Eurogreen Trading Contracting & Facilities
+                  Services W.L.L has developed strong
+                  technological expertise for conceiving and
+                  developing major international products related
+                  to our industry.</p>
+                  
+                  
+                  <p class="card-text"> The Company has established
+                  close ties with major international suppliers in the
+                  field of BMS, Automation, Earthing & lightning
+                  protection, Electrical services. mechanical
+                  services, Industrial supplies & Storage Solutions. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Boxes Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Quality Policy</h2>
+          <p>Eurogreen Group has a highly professional
+            experienced management team with a progressive outlook, that emphasis on detailed
+            planning and careful monitoring of each project, in the past Eurogreen Group has given its
+            electromechanical services in several projects and completed them successfully up to the
+            satisfaction of the main contractors, Consultants and the Clients. Through our experience in
+            serving the market, we have obtained the knowledge to address the needs of the time. We
+            have a thorough understanding of all the disciplines we deal with and we strive to satisfy this
+            need in the most effective way. Our experience in this arena has given us the edge to provide
+            client with good quality service and support.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
+              <p class="description">Eurogreen Trading Contracting & Facilities Services W.L.L aims to provide defect
+                free goods and services to its customers on time and within budget.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <!-- <h4 class="title"><a href="">Dolor Sitema</a></h4> -->
+              <p class="description">Management System are determined and addressed with appropriate risk
+                control methods based the concept of Risk based thinking.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <!-- <h4 class="title"><a href="">Sed ut perspiciatis</a></h4> -->
+              <p class="description">Ensures effective communication through-out the Organization to inculcate
+                the importance of meeting the customer needs and legal requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="img/image5.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Develop and continually improve the Quality Management System.</h3>
+            <p class="fst-italic">
+              Ensures that all potential internal and external issues that are relevant to the
+purpose and the strategic direction of Eurogreen Trading Contracting &
+Facilities Services W.L.L and that affect its ability to achieve the intended
+result(s) of its Quality .
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circled"></i> Ensure that the resources needed are determined and provided for the
+                effective implementation of Quality Management System. </li>
+              <li><i class="bi bi-check-circled"></i> Eurogreen Trading Contracting & Facilities Services W.L.L aims to provide defect
+                free goods and services to its customers on time and within budget.</li>
+              <li><i class="bi bi-check-circled"></i>Ensure that the customer needs and expectations are determined and fulfilled
+                with the aim of achieving and continually improving the customer satisfaction.</li>
+            </ul>
+            <!-- <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p> -->
+          </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Eurogreen Group has a highly professional
+            experienced management team with a progressive outlook, that emphasis on detailed
+            planning and careful monitoring of each project, in the past Eurogreen Group has given its
+            electromechanical services in several projects and completed them successfully up to the
+            satisfaction of the main contractors, Consultants and the Clients. Through our experience in
+            serving the market, we have obtained the knowledge to address the needs of the time. We
+            have a thorough understanding of all the disciplines we deal with and we strive to satisfy this
+            need in the most effective way. Our experience in this arena has given us the edge to provide
+            client with good quality service and support.</p>
+        </div>
+
+       
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+   
+
+    <!-- ======= Our Clients Section ======= -->
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Business & Services</h2>
+          <p>Management System are determined and addressed with appropriate risk
+            control methods based the concept of Risk based thinking.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon " style="margin-top: 70px; margin-bottom: 70px; ">
+                <img src="img/image10.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4">
+              </div>
+
+
+              <h4 class="mt-5"  ><a href="">Electrical Division</a></h4>
+              
+              <p>Low Current, Control Panels, Fire Alarm</p>
+            </div>
+          </div>
+          
+          
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon" style="margin-top: 70px; margin-bottom: 70px;">
+                <img src="img/image4.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4 ">
+              </div>
+              <h4  class="mt-5"><a href="">Mechanical Division</a></h4>
+              <p>HVAC & Ducting, Plumbing & Drainage, Industrial works, Fire Fighting,Plumbs Work</p>
+
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon " style="margin-top: 70px; margin-bottom: 70px;">
+                <img src="img/image1.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4">
+              </div>
+              <h4  class="mt-5"><a href="">Storage Division</a></h4>
+              <p>Industrial Storage,Commercial Storage System,Tire Storage</p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon " style="margin-top: 70px; margin-bottom: 70px;">
+                <img src="img/image6.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4">
+              </div>
+              <h4  class="mt-5"><a href="">Civil Division</a></h4>
+              <p>Storage Solutions, Civil Works,Ceiling Works</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon " style="margin-top: 70px; margin-bottom: 70px;">
+                <img src="img/about-boxes-2.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4">
+              </div>
+              <h4  class="mt-5"><a href="">Trading Division</a></h4>
+              <p> Building Materials, Flow Meter, Pipes & Fittings,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon "style="margin-top: 70px; margin-bottom: 70px;" >
+                <img src="img/hero-bg.jpg" alt="Electrical Division Image" class="rounded-image mb-5 mt-4">
+              </div>
+              <h4  class="mt-5" style="margin-top: 700px;"><a href="">Commercial Storage Division</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    
+
+    <!-- ======= Portfolio Section ======= -->
+   
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="img/team/team-1.jpg" alt="">
+              <h4>Pradeepkumar</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                <!-- Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut -->
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="img/team/team-2.jpg" alt="">
+              <h4>Saraniya</h4>
+              <span>Product Manager</span>
+              <p>
+                <!-- Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus -->
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="img/team/team-3.jpg" alt="">
+              <h4>DineshKumar</h4>
+              <span>CTO</span>
+              <p>
+                <!-- Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara -->
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+
+
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/testimonials-bg.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="img/image1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> 
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/image2.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/image5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/image3.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="img/image4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/image5.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/image6.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/image5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/image7.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/image8.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/image9.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/image10.jpg" class="img-fluid" alt="">
+              <!-- <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <!-- <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>No 20 Guindy, Chennai 600-004</p>
+              </div> -->
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@eurogreenqatar.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+974 5590 5757, 5037 5504</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Cr No:</h4>
+                <p>185387</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>EURO GREEN</h3>
+              <p>
+                A108 Adam Street <br>
+                Guindy, Chennai<br><br>
+                <strong>Phone:</strong> +974 5590 5757,<br>
+                <strong>Email:</strong> info@eurogreenqatar.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul class="list-unstyled m-5">
+              <li><i class='bx bx-home'></i> <a href="#">Home</a></li>
+              <li><i class='bx bx-info-circle'></i> <a href="#">About </a></li>
+              <li><i class='bx bx-cog'></i> <a href="#">Services</a></li>
+              <li><i class='bx bx-book'></i> <a href="#">Team</a></li>
+              <li><i class='bx bx-shield'></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul class="list-unstyled m-5">
+              <li><i class="fas fa-cogs"></i> <a href="#">Mechanical Division</a></li>
+              <li><i class="fas fa-bolt "></i> <a href="#"> Electrical Division</a></li>
+              <li><i class="fas fa-city"></i> <a href="#">Civil Division</a></li>
+              <li><i class="fas fa-shopping-cart"></i> <a href="#">Trading Division</a></li>
+              <li><i class="fas fa-arrow-alt-circle-up"></i> <a href="#">Elevator Division</a></li>
+            </ul>
+          </div>
+          
+          
+          
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>EUROGREEN</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/ -->
+        Designed by <a href=""> Shalom InfoTech</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounter.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  
+ 
+
+
+</body>
+
+</html>
